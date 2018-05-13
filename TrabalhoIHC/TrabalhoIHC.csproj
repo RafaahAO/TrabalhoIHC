@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9DD4049-5F67-424D-890F-F0E414EEA3B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrabalhoIHC</RootNamespace>
+    <AssemblyName>TrabalhoIHC</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\AdviceCategoriaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\AdviceCategoriaDespesa.Designer.cs">
+      <DependentUpon>AdviceCategoriaDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\DeleteCategoriaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\DeleteCategoriaDespesa.Designer.cs">
+      <DependentUpon>DeleteCategoriaDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\EditCategoriaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\EditCategoriaDespesa.Designer.cs">
+      <DependentUpon>EditCategoriaDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\ListCategoriaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\ListCategoriaDespesa.Designer.cs">
+      <DependentUpon>ListCategoriaDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\AdviceCategoriaReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\AdviceCategoriaReceita.Designer.cs">
+      <DependentUpon>AdviceCategoriaReceita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\CreateCategoriaReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\CreateCategoriaReceita.Designer.cs">
+      <DependentUpon>CreateCategoriaReceita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\DeleteCategoriaReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\DeleteCategoriaReceita.Designer.cs">
+      <DependentUpon>DeleteCategoriaReceita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\EditCategoriaReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\EditCategoriaReceita.Designer.cs">
+      <DependentUpon>EditCategoriaReceita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\ListCategoriaReceitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaReceitas\ListCategoriaReceitas.Designer.cs">
+      <DependentUpon>ListCategoriaReceitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\AdviceConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\AdviceConta.Designer.cs">
+      <DependentUpon>AdviceConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\CreateCategoriaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\CategoriaDespesas\CreateCategoriaDespesa.Designer.cs">
+      <DependentUpon>CreateCategoriaDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\DeleteConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\DeleteConta.Designer.cs">
+      <DependentUpon>DeleteConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\EditConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\EditConta.Designer.cs">
+      <DependentUpon>EditConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\ListConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\ListConta.Designer.cs">
+      <DependentUpon>ListConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\AdviceFinanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\AdviceFinanca.Designer.cs">
+      <DependentUpon>AdviceFinanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\CreateFinanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\CreateFinanca.Designer.cs">
+      <DependentUpon>CreateFinanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\FiltroFinanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\FiltroFinanca.Designer.cs">
+      <DependentUpon>FiltroFinanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\InstrucoesCF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\InstrucoesCF.Designer.cs">
+      <DependentUpon>InstrucoesCF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Model\CategoriaReceita.cs" />
+    <Compile Include="CadastrosBase\Model\CategoriaDespesa.cs" />
+    <Compile Include="CadastrosBase\Model\Conta.cs" />
+    <Compile Include="CadastrosBase\Model\Filtro.cs" />
+    <Compile Include="CadastrosBase\Model\Financa.cs" />
+    <Compile Include="CadastrosBase\Service\CategoriaReceitaService.cs" />
+    <Compile Include="CadastrosBase\Service\CategoriaDespesaService.cs" />
+    <Compile Include="CadastrosBase\Service\FiltroService.cs" />
+    <Compile Include="CadastrosBase\Service\FinancaService.cs" />
+    <Compile Include="CadastrosBase\Service\ContaService.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\CreateConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Contas\CreateConta.Designer.cs">
+      <DependentUpon>CreateConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaDespesas\AdviceCategoriaDespesa.resx">
+      <DependentUpon>AdviceCategoriaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaDespesas\DeleteCategoriaDespesa.resx">
+      <DependentUpon>DeleteCategoriaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaDespesas\EditCategoriaDespesa.resx">
+      <DependentUpon>EditCategoriaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaDespesas\ListCategoriaDespesa.resx">
+      <DependentUpon>ListCategoriaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaReceitas\AdviceCategoriaReceita.resx">
+      <DependentUpon>AdviceCategoriaReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaReceitas\CreateCategoriaReceita.resx">
+      <DependentUpon>CreateCategoriaReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaReceitas\DeleteCategoriaReceita.resx">
+      <DependentUpon>DeleteCategoriaReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaReceitas\EditCategoriaReceita.resx">
+      <DependentUpon>EditCategoriaReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaReceitas\ListCategoriaReceitas.resx">
+      <DependentUpon>ListCategoriaReceitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Contas\AdviceConta.resx">
+      <DependentUpon>AdviceConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\CategoriaDespesas\CreateCategoriaDespesa.resx">
+      <DependentUpon>CreateCategoriaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Contas\DeleteConta.resx">
+      <DependentUpon>DeleteConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Contas\EditConta.resx">
+      <DependentUpon>EditConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Contas\ListConta.resx">
+      <DependentUpon>ListConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Financa\AdviceFinanca.resx">
+      <DependentUpon>AdviceFinanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Financa\CreateFinanca.resx">
+      <DependentUpon>CreateFinanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Financa\FiltroFinanca.resx">
+      <DependentUpon>FiltroFinanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Financa\InstrucoesCF.resx">
+      <DependentUpon>InstrucoesCF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Contas\CreateConta.resx">
+      <DependentUpon>CreateConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\TrabalhoIHC.CadastrosBase.Model.Financa.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
