@@ -1,11 +1,11 @@
 ﻿namespace TrabalhoIHC.CadastrosBase.Forms
 {
-    partial class EditConta
+    partial class EditControleGastos
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IControleGastosiner components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -99,7 +99,7 @@
             this.MainLabel.Name = "MainLabel";
             this.MainLabel.Size = new System.Drawing.Size(124, 24);
             this.MainLabel.TabIndex = 7;
-            this.MainLabel.Text = "Editar Conta";
+            this.MainLabel.Text = "Editar ControleGastos";
             this.MainLabel.Click += new System.EventHandler(this.MainLabel_Click);
             // 
             // txtDesc
@@ -127,7 +127,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(273, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Selecione uma conta para a edição";
+            this.label2.Text = "Selecione uma ControleGastos para a edição";
             // 
             // comboBox1
             // 
@@ -146,7 +146,7 @@
             this.txtId.TabIndex = 15;
             this.txtId.Visible = false;
             // 
-            // EditConta
+            // EditControleGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -160,10 +160,10 @@
             this.Controls.Add(this.txtDesc);
             this.Controls.Add(this.LabelDesc);
             this.Controls.Add(this.MainLabel);
-            this.Name = "EditConta";
-            this.Text = "EditConta";
-            this.Load += new System.EventHandler(this.EditConta_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EditConta_KeyDown);
+            this.Name = "EditControleGastos";
+            this.Text = "EditControleGastos";
+            this.Load += new System.EventHandler(this.EditControleGastos_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EditControleGastos_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

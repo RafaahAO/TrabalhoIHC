@@ -26,3 +26,6 @@ C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoIHC\TrabalhoIHC\obj
 C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoIHC\TrabalhoIHC\obj\Debug\TrabalhoIHC.CadastrosBase.Forms.Financa.AdviceFinanca.resources
 C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoIHC\TrabalhoIHC\obj\Debug\TrabalhoIHC.CadastrosBase.Forms.Financa.FiltroFinanca.resources
 C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoIHC\TrabalhoIHC\obj\Debug\TrabalhoIHC.CadastrosBase.Forms.Financa.InstrucoesCF.resources
+C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\bin\Debug\TrabalhoIHC.exe.config
+C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.exe
+C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.pdb

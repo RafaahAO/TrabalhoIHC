@@ -12,27 +12,27 @@ using TrabalhoIHC.CadastrosBase.Service;
 
 namespace TrabalhoIHC.CadastrosBase.Forms
 {
-    public partial class ListConta : Form
+    public partial class ListControleGastos : Form
     {
-        public ListConta()
+        public ListControleGastos()
         {
             InitializeComponent();
         }
 
-        private void ListConta_Load(object sender, EventArgs e)
+        private void ListControleGastos_Load(object sender, EventArgs e)
         {
-            List<Conta> contas = ContaService.List();
+            List<ControleGastos> ControleGastoss = ControleGastosService.List();
 
-            foreach(var conta in contas)
+            foreach(var ControleGastos in ControleGastoss)
             {
-                ListViewItem item = new ListViewItem(conta.Id.ToString());
-                item.SubItems.Add(conta.Descricao);
-                item.SubItems.Add(conta.Valor.ToString("0.00"));
+                ListViewItem item = new ListViewItem(ControleGastos.Id.ToString());
+                item.SubItems.Add(ControleGastos.Descricao);
+                item.SubItems.Add(ControleGastos.Valor.ToString("0.00"));
                 listView1.Items.Add(item);
             }
         }
 
-        private void ListConta_KeyDown(object sender, KeyEventArgs e)
+        private void ListControleGastos_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {

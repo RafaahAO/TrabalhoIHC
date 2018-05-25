@@ -12,24 +12,24 @@ using TrabalhoIHC.CadastrosBase.Service;
 
 namespace TrabalhoIHC.CadastrosBase.Forms
 {
-    public partial class DeleteConta : Form
+    public partial class DeleteControleGastos : Form
     {
-        public DeleteConta()
+        public DeleteControleGastos()
         {
             InitializeComponent();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Conta conta = (Conta)(comboBox1.SelectedItem);
-            txtId.Text = conta.Id.ToString();
+            ControleGastos ControleGastos = (ControleGastos)(comboBox1.SelectedItem);
+            txtId.Text = ControleGastos.Id.ToString();
 
         }
 
-        private void DeleteConta_Load(object sender, EventArgs e)
+        private void DeleteControleGastos_Load(object sender, EventArgs e)
         {
 
-            List<Conta> lstShow = ContaService.List();
+            List<ControleGastos> lstShow = ControleGastosService.List();
 
             if (lstShow.Count > 0)
             {
@@ -41,22 +41,22 @@ namespace TrabalhoIHC.CadastrosBase.Forms
             }
             else
             {
-                MessageBox.Show("Deve haver ao menos uma conta para ser Deletada.");
+                MessageBox.Show("Deve haver ao menos uma ControleGastos para ser Deletada.");
             }
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AdviceConta confirm = new AdviceConta();
+            AdviceControleGastos confirm = new AdviceControleGastos();
             DialogResult result = confirm.ShowDialog();
             List<string> Erros = new List<string>();
-            List<Conta> lstShow = ContaService.List();
+            List<ControleGastos> lstShow = ControleGastosService.List();
 
             if (result == DialogResult.OK)
             {
-                Conta conta = ContaService.findConta(int.Parse(txtId.Text));
-                Erros = ContaService.Delete(conta);
+                ControleGastos ControleGastos = ControleGastosService.findControleGastos(int.Parse(txtId.Text));
+                Erros = ControleGastosService.Delete(ControleGastos);
 
                 if (Erros.Count > 0)
                 {
@@ -70,9 +70,9 @@ namespace TrabalhoIHC.CadastrosBase.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Conta deletada com sucesso.");
+                    MessageBox.Show("ControleGastos deletada com sucesso.");
 
-                    DeleteConta_Load(null, EventArgs.Empty);
+                    DeleteControleGastos_Load(null, EventArgs.Empty);
                 }
             }
 
@@ -83,7 +83,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms
             this.Close();
         }
 
-        private void DeleteConta_KeyDown(object sender, KeyEventArgs e)
+        private void DeleteControleGastos_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {

@@ -154,6 +154,13 @@
     <Compile Include="CadastrosBase\Forms\Financa\InstrucoesCF.Designer.cs">
       <DependentUpon>InstrucoesCF.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrosBase\Forms\Indicadores\CotroleGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Indicadores\CotroleGastos.Designer.cs">
+      <DependentUpon>CotroleGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrosBase\Model\ControleGastos.cs" />
     <Compile Include="CadastrosBase\Model\CategoriaReceita.cs" />
     <Compile Include="CadastrosBase\Model\CategoriaDespesa.cs" />
     <Compile Include="CadastrosBase\Model\Conta.cs" />
@@ -161,6 +168,7 @@
     <Compile Include="CadastrosBase\Model\Financa.cs" />
     <Compile Include="CadastrosBase\Service\CategoriaReceitaService.cs" />
     <Compile Include="CadastrosBase\Service\CategoriaDespesaService.cs" />
+    <Compile Include="CadastrosBase\Service\ControleGastosService.cs" />
     <Compile Include="CadastrosBase\Service\FiltroService.cs" />
     <Compile Include="CadastrosBase\Service\FinancaService.cs" />
     <Compile Include="CadastrosBase\Service\ContaService.cs" />
@@ -231,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrosBase\Forms\Financa\InstrucoesCF.resx">
       <DependentUpon>InstrucoesCF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Indicadores\CotroleGastos.resx">
+      <DependentUpon>CotroleGastos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

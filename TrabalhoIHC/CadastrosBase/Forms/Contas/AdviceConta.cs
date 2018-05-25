@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrabalhoIHC.CadastrosBase.Forms
 {
-    public partial class AdviceConta : Form
+    public partial class AdviceControleGastos : Form
     {
-        public AdviceConta()
+        public AdviceControleGastos()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms
             this.Close();
         }
 
-        private void AdviceConta_KeyDown(object sender, KeyEventArgs e)
+        private void AdviceControleGastos_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {

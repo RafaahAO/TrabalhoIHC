@@ -1,11 +1,11 @@
 ﻿namespace TrabalhoIHC.CadastrosBase.Forms
 {
-    partial class ListConta
+    partial class ListControleGastos
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IControleGastosiner components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -43,7 +43,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 19);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Contas Cadastradas";
+            this.label1.Text = "ControleGastoss Cadastradas";
             // 
             // listView1
             // 
@@ -73,17 +73,17 @@
             this.columnHeader3.Text = "Valor";
             this.columnHeader3.Width = 89;
             // 
-            // ListConta
+            // ListControleGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(239, 261);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
-            this.Name = "ListConta";
-            this.Text = "ListConta";
-            this.Load += new System.EventHandler(this.ListConta_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ListConta_KeyDown);
+            this.Name = "ListControleGastos";
+            this.Text = "ListControleGastos";
+            this.Load += new System.EventHandler(this.ListControleGastos_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ListControleGastos_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

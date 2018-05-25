@@ -1,11 +1,11 @@
 ﻿namespace TrabalhoIHC
 {
-    partial class CreateConta
+    partial class CreateControleGastos
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IControleGastosiner components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -45,7 +45,7 @@
             this.MainLabel.Name = "MainLabel";
             this.MainLabel.Size = new System.Drawing.Size(118, 24);
             this.MainLabel.TabIndex = 0;
-            this.MainLabel.Text = "Nova Conta";
+            this.MainLabel.Text = "Nova ControleGastos";
             // 
             // LabelDesc
             // 
@@ -103,7 +103,7 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // CreateConta
+            // CreateControleGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,9 +115,9 @@
             this.Controls.Add(this.txtDesc);
             this.Controls.Add(this.LabelDesc);
             this.Controls.Add(this.MainLabel);
-            this.Name = "CreateConta";
-            this.Text = "Nova Conta";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CreateConta_KeyDown);
+            this.Name = "CreateControleGastos";
+            this.Text = "Nova ControleGastos";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CreateControleGastos_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

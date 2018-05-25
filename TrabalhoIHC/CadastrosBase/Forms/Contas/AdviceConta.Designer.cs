@@ -1,11 +1,11 @@
 ﻿namespace TrabalhoIHC.CadastrosBase.Forms
 {
-    partial class AdviceConta
+    partial class AdviceControleGastos
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IControleGastosiner components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -65,7 +65,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Tem certeza que deseja excluir essa conta?";
+            this.label1.Text = "Tem certeza que deseja excluir essa ControleGastos?";
             // 
             // button1
             // 
@@ -89,7 +89,7 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // AdviceConta
+            // AdviceControleGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -97,9 +97,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Name = "AdviceConta";
+            this.Name = "AdviceControleGastos";
             this.Text = "Advice";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AdviceConta_KeyDown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AdviceControleGastos_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

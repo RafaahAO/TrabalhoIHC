@@ -30,8 +30,8 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Financa
         private void button1_Click(object sender, EventArgs e)
         {
             List<string> Erros = new List<string>();
-            List<Model.Financa> financas = FiltroService.setFiltro(comboBox1.Text, chkPago.Checked, textBox3.Text, textBox1.Text, textBox2.Text, dateTimePicker1.Value, dateTimePicker2.Value, (string)comboBox5.SelectedItem, ((Conta)comboBox2.SelectedItem).Id, ((CategoriaDespesa)comboBox3.SelectedItem).Id, ((CategoriaReceita)comboBox4.SelectedItem).Id, (string)comboBox5.SelectedItem == "Receita",
-                                                                   ftrCatDespesa.Checked,ftrCatReceita.Checked,ftrConta.Checked,ftrDescricao.Checked,ftrPago.Checked,ftrReferências.Checked,ftrTipo.Checked,ftrVencimento.Checked,out Erros);
+            List<Model.Financa> financas = FiltroService.setFiltro(comboBox1.Text, chkPago.Checked, textBox3.Text, textBox1.Text, textBox2.Text, dateTimePicker1.Value, dateTimePicker2.Value, (string)comboBox5.SelectedItem, ((ControleGastos)comboBox2.SelectedItem).Id, ((CategoriaDespesa)comboBox3.SelectedItem).Id, ((CategoriaReceita)comboBox4.SelectedItem).Id, (string)comboBox5.SelectedItem == "Receita",
+                                                                   ftrCatDespesa.Checked,ftrCatReceita.Checked,ftrControleGastos.Checked,ftrDescricao.Checked,ftrPago.Checked,ftrReferências.Checked,ftrTipo.Checked,ftrVencimento.Checked,out Erros);
             form.filterGrid(financas);
             this.Close();
 
@@ -64,10 +64,10 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Financa
                 comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             }
 
-            var contas = ContaService.List();
-            if (contas.Count > 0)
+            var ControleGastoss = ControleGastosService.List();
+            if (ControleGastoss.Count > 0)
             {
-                comboBox2.DataSource = contas;
+                comboBox2.DataSource = ControleGastoss;
                 comboBox2.DisplayMember = "Descricao";
                 comboBox2.ValueMember = "Id";
                 comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;

@@ -78,6 +78,9 @@
             this.btn_F7 = new System.Windows.Forms.Button();
             this.btn_F5 = new System.Windows.Forms.Button();
             this.btn_F3 = new System.Windows.Forms.Button();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.financaBindingSource)).BeginInit();
@@ -88,6 +91,7 @@
             this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuItem9,
             this.menuItem5,
+            this.menuItem1,
             this.menuItem13});
             // 
             // menuItem9
@@ -202,7 +206,7 @@
             // 
             // menuItem13
             // 
-            this.menuItem13.Index = 2;
+            this.menuItem13.Index = 3;
             this.menuItem13.Text = "Ajuda";
             this.menuItem13.Click += new System.EventHandler(this.menuItem13_Click);
             // 
@@ -351,7 +355,7 @@
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.Location = new System.Drawing.Point(0, 0);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(684, 384);
+            this.MainPanel.Size = new System.Drawing.Size(684, 435);
             this.MainPanel.TabIndex = 0;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
@@ -557,11 +561,29 @@
             this.btn_F3.Click += new System.EventHandler(this.btn_F3_Click);
             this.btn_F3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn_F3_KeyDown);
             // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 2;
+            this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem2,
+            this.menuItem3});
+            this.menuItem1.Text = "Indicadores";
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = 0;
+            this.menuItem2.Text = "Controle de Gastos";
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 1;
+            this.menuItem3.Text = "Visão Global";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 384);
+            this.ClientSize = new System.Drawing.Size(684, 435);
             this.Controls.Add(this.MainPanel);
             this.KeyPreview = true;
             this.Menu = this.mainMenu1;
@@ -629,6 +651,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Finalizado;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Receita;
+        private System.Windows.Forms.MenuItem menuItem1;
+        private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.MenuItem menuItem3;
     }
 }
 
