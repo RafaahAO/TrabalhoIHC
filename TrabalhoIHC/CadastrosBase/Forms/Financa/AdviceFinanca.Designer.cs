@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IControleGastosiner components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -87,7 +87,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Tem certeza que deseja excluir essa ControleGastos?";
+            this.label1.Text = "Tem certeza que deseja excluir essa Conta?";
             // 
             // AdviceFinanca
             // 

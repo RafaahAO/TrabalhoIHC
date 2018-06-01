@@ -11,9 +11,9 @@ using TrabalhoIHC.CadastrosBase.Service;
 
 namespace TrabalhoIHC
 {
-    public partial class CreateControleGastos : Form
+    public partial class CreateConta : Form
     {
-        public CreateControleGastos()
+        public CreateConta()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace TrabalhoIHC
         {
             string Desc = txtDesc.Text;
             string Valor = txtValor.Text;
-            List<string>Erros = ControleGastosService.Create(Desc, Valor);
+            List<string>Erros = ContaService.Create(Desc, Valor);
 
             if (Erros.Count > 0)
             {
@@ -38,7 +38,7 @@ namespace TrabalhoIHC
             {
                 txtDesc.Text = "";
                 txtValor.Text = "";
-                MessageBox.Show("ControleGastos criada com sucesso.");
+                MessageBox.Show("Conta criada com sucesso.");
             }
 
         }
@@ -48,7 +48,7 @@ namespace TrabalhoIHC
             this.Close();
         }
 
-        private void CreateControleGastos_KeyDown(object sender, KeyEventArgs e)
+        private void CreateConta_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {

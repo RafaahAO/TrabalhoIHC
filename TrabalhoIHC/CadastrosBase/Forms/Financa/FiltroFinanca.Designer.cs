@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IControleGastosiner components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -62,7 +62,7 @@
             this.ftrVencimento = new System.Windows.Forms.CheckBox();
             this.ftrCatReceita = new System.Windows.Forms.CheckBox();
             this.ftrCatDespesa = new System.Windows.Forms.CheckBox();
-            this.ftrControleGastos = new System.Windows.Forms.CheckBox();
+            this.ftrConta = new System.Windows.Forms.CheckBox();
             this.ftrTipo = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -205,7 +205,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(41, 15);
             this.label9.TabIndex = 21;
-            this.label9.Text = "ControleGastos";
+            this.label9.Text = "Conta";
             // 
             // comboBox1
             // 
@@ -361,7 +361,7 @@
             this.panel2.Controls.Add(this.ftrCatReceita);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.ftrCatDespesa);
-            this.panel2.Controls.Add(this.ftrControleGastos);
+            this.panel2.Controls.Add(this.ftrConta);
             this.panel2.Controls.Add(this.ftrTipo);
             this.panel2.Controls.Add(this.ftrVencimento);
             this.panel2.Controls.Add(this.ftrReferências);
@@ -432,15 +432,15 @@
             this.ftrCatDespesa.Text = "Categoria Despesa";
             this.ftrCatDespesa.UseVisualStyleBackColor = true;
             // 
-            // ftrControleGastos
+            // ftrConta
             // 
-            this.ftrControleGastos.AutoSize = true;
-            this.ftrControleGastos.Location = new System.Drawing.Point(156, 50);
-            this.ftrControleGastos.Name = "ftrControleGastos";
-            this.ftrControleGastos.Size = new System.Drawing.Size(54, 17);
-            this.ftrControleGastos.TabIndex = 5;
-            this.ftrControleGastos.Text = "ControleGastos";
-            this.ftrControleGastos.UseVisualStyleBackColor = true;
+            this.ftrConta.AutoSize = true;
+            this.ftrConta.Location = new System.Drawing.Point(156, 50);
+            this.ftrConta.Name = "ftrConta";
+            this.ftrConta.Size = new System.Drawing.Size(54, 17);
+            this.ftrConta.TabIndex = 5;
+            this.ftrConta.Text = "Conta";
+            this.ftrConta.UseVisualStyleBackColor = true;
             // 
             // ftrTipo
             // 
@@ -530,7 +530,7 @@
         private System.Windows.Forms.CheckBox ftrCatReceita;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox ftrCatDespesa;
-        private System.Windows.Forms.CheckBox ftrControleGastos;
+        private System.Windows.Forms.CheckBox ftrConta;
         private System.Windows.Forms.CheckBox ftrTipo;
         private System.Windows.Forms.CheckBox ftrVencimento;
         private System.Windows.Forms.CheckBox ftrReferências;

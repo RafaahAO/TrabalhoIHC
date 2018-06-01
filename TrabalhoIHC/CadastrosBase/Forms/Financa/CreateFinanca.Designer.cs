@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IControleGastosiner components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -161,7 +161,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 16);
             this.label4.TabIndex = 4;
-            this.label4.Text = "ControleGastos";
+            this.label4.Text = "Conta";
             // 
             // comboBox2
             // 

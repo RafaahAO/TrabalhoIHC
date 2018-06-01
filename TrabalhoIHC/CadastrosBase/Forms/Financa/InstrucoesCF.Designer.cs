@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IControleGastosiner components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -81,7 +81,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(219, 16);
             this.label3.TabIndex = 2;
-            this.label3.Text = "que se cadastre previamente ControleGastos";
+            this.label3.Text = "que se cadastre previamente Conta";
             // 
             // label4
             // 
@@ -206,7 +206,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(291, 16);
             this.label12.TabIndex = 2;
-            this.label12.Text = "na ControleGastos depois da confirmação do pagamento";
+            this.label12.Text = "na Conta depois da confirmação do pagamento";
             // 
             // panel4
             // 
@@ -226,7 +226,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(268, 16);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Os valores em ControleGastos podem ser verificados";
+            this.label14.Text = "Os valores em Conta podem ser verificados";
             // 
             // label16
             // 
@@ -236,7 +236,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(177, 16);
             this.label16.TabIndex = 2;
-            this.label16.Text = "em Menu >> ControleGastoss >> Listar";
+            this.label16.Text = "em Menu >> Contas >> Listar";
             // 
             // button1
             // 

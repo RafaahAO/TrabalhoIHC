@@ -67,17 +67,17 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Financa
             }
             else if (comboBox2.SelectedItem == null)
             {
-                MessageBox.Show("Selecione uma ControleGastos válida");
+                MessageBox.Show("Selecione uma Conta válida");
             }
             else
             {
                 if (comboBox1.Text == "Receita")
                 {
-                    Erros = FinancaService.Create(descricao, Valor, (ControleGastos)comboBox2.SelectedItem, pago, referencia, vencimento, true, null, (CategoriaReceita)comboCatReceita.SelectedItem);
+                    Erros = FinancaService.Create(descricao, Valor, (Conta)comboBox2.SelectedItem, pago, referencia, vencimento, true, null, (CategoriaReceita)comboCatReceita.SelectedItem);
                 }
                 else
                 {
-                    Erros = FinancaService.Create(descricao, Valor, (ControleGastos)comboBox2.SelectedItem, pago, referencia, vencimento, false, (CategoriaDespesa)comboCatDespesa.SelectedItem);
+                    Erros = FinancaService.Create(descricao, Valor, (Conta)comboBox2.SelectedItem, pago, referencia, vencimento, false, (CategoriaDespesa)comboCatDespesa.SelectedItem);
                 }
 
 
@@ -126,10 +126,10 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Financa
                 comboCatDespesa.DropDownStyle = ComboBoxStyle.DropDownList;
             }
 
-            var ControleGastoss = ControleGastosService.List();
-            if (ControleGastoss.Count > 0)
+            var Contas = ContaService.List();
+            if (Contas.Count > 0)
             {
-                comboBox2.DataSource = ControleGastoss;
+                comboBox2.DataSource = Contas;
                 comboBox2.DisplayMember = "Descricao";
                 comboBox2.ValueMember = "Id";
                 comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;

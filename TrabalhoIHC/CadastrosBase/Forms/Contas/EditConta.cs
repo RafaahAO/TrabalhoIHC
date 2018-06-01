@@ -12,9 +12,9 @@ using TrabalhoIHC.CadastrosBase.Service;
 
 namespace TrabalhoIHC.CadastrosBase.Forms
 {
-    public partial class EditControleGastos : Form
+    public partial class EditConta : Form
     {
-        public EditControleGastos()
+        public EditConta()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms
             string Desc = txtDesc.Text;
             string Valor = txtValor.Text;
             string Id = txtId.Text;
-            List<string> Erros = ControleGastosService.Edit(int.Parse(Id),Desc, Valor);
+            List<string> Erros = ContaService.Edit(int.Parse(Id),Desc, Valor);
 
             if (Erros.Count > 0)
             {
@@ -50,8 +50,8 @@ namespace TrabalhoIHC.CadastrosBase.Forms
             {
                 txtDesc.Text = "";
                 txtValor.Text = "";
-                MessageBox.Show("ControleGastos editada com sucesso.");
-                EditControleGastos_Load(null, EventArgs.Empty);
+                MessageBox.Show("Conta editada com sucesso.");
+                EditConta_Load(null, EventArgs.Empty);
             }
         }
 
@@ -60,10 +60,10 @@ namespace TrabalhoIHC.CadastrosBase.Forms
             this.Close();
         }
 
-        private void EditControleGastos_Load(object sender, EventArgs e)
+        private void EditConta_Load(object sender, EventArgs e)
         {
-            List<ControleGastos> lstShow = ControleGastosService.List();
-            var lstComplete = new List<ControleGastos>();
+            List<Conta> lstShow = ContaService.List();
+            var lstComplete = new List<Conta>();
 
             if (lstShow.Count > 0)
             {
@@ -75,20 +75,20 @@ namespace TrabalhoIHC.CadastrosBase.Forms
             }
             else
             {
-                MessageBox.Show("Deve haver ao menos uma ControleGastos para ser editada.");
+                MessageBox.Show("Deve haver ao menos uma Conta para ser editada.");
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ControleGastos ControleGastos = (ControleGastos)(comboBox1.SelectedItem);
-            txtId.Text = ControleGastos.Id.ToString();
-            txtDesc.Text = ControleGastos.Descricao;
-            txtValor.Text = ControleGastos.Valor.ToString("0.00");
+            Conta Conta = (Conta)(comboBox1.SelectedItem);
+            txtId.Text = Conta.Id.ToString();
+            txtDesc.Text = Conta.Descricao;
+            txtValor.Text = Conta.Valor.ToString("0.00");
 
         }
 
-        private void EditControleGastos_KeyDown(object sender, KeyEventArgs e)
+        private void EditConta_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {

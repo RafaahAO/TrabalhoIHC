@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IControleGastosiner components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -66,7 +66,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(273, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Selecione uma ControleGastos para a edição";
+            this.label2.Text = "Selecione uma Conta para a edição";
             // 
             // comboBox1
             // 

@@ -1,11 +1,11 @@
 ﻿namespace TrabalhoIHC.CadastrosBase.Forms
 {
-    partial class DeleteControleGastos
+    partial class DeleteConta
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IControleGastosiner components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -64,7 +64,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(285, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Selecione a ControleGastos que deseja apagar";
+            this.label2.Text = "Selecione a Conta que deseja apagar";
             // 
             // comboBox1
             // 
@@ -105,9 +105,9 @@
             this.MainLabel.Name = "MainLabel";
             this.MainLabel.Size = new System.Drawing.Size(136, 24);
             this.MainLabel.TabIndex = 16;
-            this.MainLabel.Text = "Deletar ControleGastos";
+            this.MainLabel.Text = "Deletar Conta";
             // 
-            // DeleteControleGastos
+            // DeleteConta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,10 +117,10 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.MainLabel);
-            this.Name = "DeleteControleGastos";
-            this.Text = "DeleteControleGastos";
-            this.Load += new System.EventHandler(this.DeleteControleGastos_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DeleteControleGastos_KeyDown);
+            this.Name = "DeleteConta";
+            this.Text = "DeleteConta";
+            this.Load += new System.EventHandler(this.DeleteConta_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DeleteConta_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
