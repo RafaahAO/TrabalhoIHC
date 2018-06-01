@@ -47,6 +47,9 @@
             this.menuItem7 = new System.Windows.Forms.MenuItem();
             this.menuItem8 = new System.Windows.Forms.MenuItem();
             this.menuItem14 = new System.Windows.Forms.MenuItem();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.menuItem13 = new System.Windows.Forms.MenuItem();
             this.AUp = new System.Windows.Forms.Button();
             this.Up = new System.Windows.Forms.Button();
@@ -78,9 +81,6 @@
             this.btn_F7 = new System.Windows.Forms.Button();
             this.btn_F5 = new System.Windows.Forms.Button();
             this.btn_F3 = new System.Windows.Forms.Button();
-            this.menuItem1 = new System.Windows.Forms.MenuItem();
-            this.menuItem2 = new System.Windows.Forms.MenuItem();
-            this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.financaBindingSource)).BeginInit();
@@ -203,6 +203,25 @@
             this.menuItem14.Index = 3;
             this.menuItem14.Text = "Listar";
             this.menuItem14.Click += new System.EventHandler(this.menuItem14_Click);
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 2;
+            this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem2,
+            this.menuItem3});
+            this.menuItem1.Text = "Indicadores";
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = 0;
+            this.menuItem2.Text = "Controle de Gastos";
+            this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click_1);
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 1;
+            this.menuItem3.Text = "Visão Global";
             // 
             // menuItem13
             // 
@@ -560,24 +579,6 @@
             this.btn_F3.UseVisualStyleBackColor = true;
             this.btn_F3.Click += new System.EventHandler(this.btn_F3_Click);
             this.btn_F3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn_F3_KeyDown);
-            // 
-            // menuItem1
-            // 
-            this.menuItem1.Index = 2;
-            this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.menuItem2,
-            this.menuItem3});
-            this.menuItem1.Text = "Indicadores";
-            // 
-            // menuItem2
-            // 
-            this.menuItem2.Index = 0;
-            this.menuItem2.Text = "Controle de Gastos";
-            // 
-            // menuItem3
-            // 
-            this.menuItem3.Index = 1;
-            this.menuItem3.Text = "Visão Global";
             // 
             // Form1
             // 

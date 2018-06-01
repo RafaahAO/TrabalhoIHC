@@ -11,6 +11,7 @@ using TrabalhoIHC.CadastrosBase.Forms;
 using TrabalhoIHC.CadastrosBase.Forms.CategoriaDespesas;
 using TrabalhoIHC.CadastrosBase.Forms.CategoriaReceitas;
 using TrabalhoIHC.CadastrosBase.Forms.Financa;
+using TrabalhoIHC.CadastrosBase.Forms.Indicadores;
 using TrabalhoIHC.CadastrosBase.Model;
 using TrabalhoIHC.CadastrosBase.Service;
 
@@ -522,6 +523,12 @@ namespace TrabalhoIHC
         {
             InstrucoesCF instrucoes = new InstrucoesCF();
             instrucoes.Show();
+        }
+
+        private void menuItem2_Click_1(object sender, EventArgs e)
+        {
+            CotroleGastos cg = new CotroleGastos();
+            cg.Show();
         }
     }
 }
