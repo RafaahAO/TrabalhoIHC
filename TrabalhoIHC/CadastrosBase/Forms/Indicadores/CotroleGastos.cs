@@ -13,9 +13,13 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 {
     public partial class CotroleGastos : Form
     {
-        public CotroleGastos()
+        Form1 form = new Form1();
+
+        public CotroleGastos(Form1 form)
         {
             InitializeComponent();
+            this.form = form;
+
         }
 
         private void CotroleGastos_Load(object sender, EventArgs e)
@@ -164,6 +168,22 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 
         private void button4_Click(object sender, EventArgs e)
         {
+            List<string> Erros = ControleGastosService.Create(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
+
+            if (Erros.Count > 0)
+            {
+                string erros = "";
+                foreach (var item in Erros)
+                {
+                    erros += item + "\r\n";
+                }
+                MessageBox.Show(erros);
+            }
+            else
+            {
+                MessageBox.Show("Finança gravada com sucesso.");
+                form.Form1_Load(null, EventArgs.Empty);
+            }
         }
     }
 }

@@ -12,7 +12,6 @@ using TrabalhoIHC.CadastrosBase.Forms.CategoriaDespesas;
 using TrabalhoIHC.CadastrosBase.Forms.CategoriaReceitas;
 using TrabalhoIHC.CadastrosBase.Forms.Financa;
 using TrabalhoIHC.CadastrosBase.Forms.Indicadores;
-using TrabalhoIHC.CadastrosBase.Service;
 using TrabalhoIHC.Model;
 using TrabalhoIHC.Service;
 
@@ -40,7 +39,6 @@ namespace TrabalhoIHC
 
         private void menuItem2_Click(object sender, EventArgs e)
         {
-            var teste = new ControleGastosService();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -529,7 +527,7 @@ namespace TrabalhoIHC
 
         private void menuItem2_Click_1(object sender, EventArgs e)
         {
-            CotroleGastos cg = new CotroleGastos();
+            CotroleGastos cg = new CotroleGastos(this);
             cg.Show();
         }
     }
