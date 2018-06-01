@@ -13,7 +13,7 @@ using TrabalhoIHC.CadastrosBase.Forms.CategoriaReceitas;
 using TrabalhoIHC.CadastrosBase.Forms.Financa;
 using TrabalhoIHC.CadastrosBase.Forms.Indicadores;
 using TrabalhoIHC.CadastrosBase.Model;
-using TrabalhoIHC.CadastrosBase.Service;
+using TrabalhoIHC.Service;
 
 namespace TrabalhoIHC
 {
@@ -38,7 +38,6 @@ namespace TrabalhoIHC
 
         private void menuItem2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)

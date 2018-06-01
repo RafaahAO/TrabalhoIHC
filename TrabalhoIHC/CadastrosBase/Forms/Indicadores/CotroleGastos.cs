@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrabalhoIHC.Service;
 
 namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 {
@@ -159,6 +160,10 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
                     textBox5.Enabled = true;
                     break;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
         }
     }
 }

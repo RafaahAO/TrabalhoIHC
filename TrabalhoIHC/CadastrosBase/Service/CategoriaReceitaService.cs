@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TrabalhoIHC.CadastrosBase.Model;
 
-namespace TrabalhoIHC.CadastrosBase.Service
+namespace TrabalhoIHC.Service
 {
     public class CategoriaReceitaService
     {

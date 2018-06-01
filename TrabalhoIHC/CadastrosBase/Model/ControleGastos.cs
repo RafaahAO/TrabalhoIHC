@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
+namespace TrabalhoIHC.CadastrosBase.Model
 {
     public class ControleGastos
     {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using TrabalhoIHC.CadastrosBase.Forms.Indicadores;
 using TrabalhoIHC.CadastrosBase.Model;
 
-namespace TrabalhoIHC.CadastrosBase.Service
+namespace TrabalhoIHC.Service
 {
     public class ControleGastosService
     {

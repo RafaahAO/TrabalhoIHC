@@ -30,11 +30,8 @@ C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\b
 C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.exe
 C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.pdb
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\bin\Debug\TrabalhoIHC.exe.config
-C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.exe
-C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.pdb
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\bin\Debug\TrabalhoIHC.exe
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\bin\Debug\TrabalhoIHC.pdb
-C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.csprojResolveAssemblyReference.cache
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.CadastrosBase.Forms.CategoriaDespesas.AdviceCategoriaDespesa.resources
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.CadastrosBase.Forms.CategoriaDespesas.DeleteCategoriaDespesa.resources
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.CadastrosBase.Forms.CategoriaDespesas.EditCategoriaDespesa.resources
@@ -58,3 +55,5 @@ C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.CreateConta.resources
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.Properties.Resources.resources
 C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.csproj.GenerateResource.Cache
+C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.exe
+C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.pdb

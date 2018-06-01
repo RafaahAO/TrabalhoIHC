@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabalhoIHC.CadastrosBase.Model;
-using TrabalhoIHC.CadastrosBase.Service;
+using TrabalhoIHC.Service;
 
 namespace TrabalhoIHC.CadastrosBase.Forms.CategoriaDespesas
 {
