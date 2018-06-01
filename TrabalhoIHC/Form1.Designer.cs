@@ -578,7 +578,7 @@
             // 
             // financaBindingSource
             // 
-            this.financaBindingSource.DataSource = typeof(TrabalhoIHC.CadastrosBase.Model.Financa);
+            this.financaBindingSource.DataSource = typeof(TrabalhoIHC.Model.Financa);
             // 
             // Form1
             // 

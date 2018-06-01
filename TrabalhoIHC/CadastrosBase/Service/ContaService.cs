@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TrabalhoIHC.CadastrosBase.Model;
+using TrabalhoIHC.Model;
 
 namespace TrabalhoIHC.Service
 {
