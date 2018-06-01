@@ -29,3 +29,6 @@ C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoIHC\TrabalhoIHC\obj
 C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\bin\Debug\TrabalhoIHC.exe.config
 C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.exe
 C:\Users\rafael.aoliveira\Documents\Projeto Pessoal\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.pdb
+C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\bin\Debug\TrabalhoIHC.exe.config
+C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.exe
+C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.pdb

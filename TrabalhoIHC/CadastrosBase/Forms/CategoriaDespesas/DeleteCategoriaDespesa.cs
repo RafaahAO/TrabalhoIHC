@@ -43,7 +43,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms.CategoriaDespesas
                 }
                 else
                 {
-                    MessageBox.Show("ControleGastos deletada com sucesso.");
+                    MessageBox.Show("Conta deletada com sucesso.");
 
                     DeleteCategoriaDespesa_Load(null, EventArgs.Empty);
                 }
@@ -65,7 +65,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms.CategoriaDespesas
             else
             {
                 this.Close();
-                MessageBox.Show("Deve haver ao menos uma ControleGastos para ser Deletada.");
+                MessageBox.Show("Deve haver ao menos uma Conta para ser Deletada.");
             }
 
         }
