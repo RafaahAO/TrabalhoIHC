@@ -133,14 +133,14 @@ namespace TrabalhoIHC.Service
                         lastId = lastId == 0 ? 1 : lastId + 1;//Pega o ultimo Id da ControleGastos do arquivo gravado
                         using (StreamWriter sw = File.AppendText(path))
                         {
-                            sw.WriteLine(lastId.ToString() + "|" + ControleGastos.ValorDiario + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
+                            sw.WriteLine(lastId.ToString() + "|" + ControleGastos.ValorDiario.ToString("0.00") + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
                         }
                     }
                     else
                     {
                         using (StreamWriter sw = File.CreateText(path))
                         {
-                            sw.WriteLine(lastId.ToString() + "|" + ControleGastos.ValorDiario + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
+                            sw.WriteLine(lastId.ToString() + "|" + ControleGastos.ValorDiario.ToString("0.00") + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
                         }
                     }
 
@@ -192,7 +192,7 @@ namespace TrabalhoIHC.Service
                         {
                             foreach (var item in matSave.Values)
                             {
-                                sw.WriteLine(lastId.ToString() + "|" + ControleGastos.ValorDiario + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
+                                sw.WriteLine(lastId.ToString() + "|" + ControleGastos.ValorDiario.ToString("0.00") + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
                             }
 
                         }
@@ -280,6 +280,17 @@ namespace TrabalhoIHC.Service
 
                     break;
             }
+        }
+
+        public static void setFistConta()
+        {
+            ControleGastos cg = List().FirstOrDefault() ?? new ControleGastos();
+
+            if (cg.Id == 0)
+            {
+                ControleGastosService.Create(cg.ValorDiario.ToString(), cg.ValorMensal.ToString(), cg.ValorTrimestral.ToString(), cg.ValorSemestral.ToString(), cg.ValorAnual.ToString());
+            }
+
         }
 
         private static double ConvertDouble(string Value) =>

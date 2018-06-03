@@ -183,6 +183,8 @@ namespace TrabalhoIHC
             binding.DataSource = FinancaService.List();
             dataGridView1.DataSource = binding;
 
+            ControleGastosService.setFistConta();
+
         }
 
         private void Add_Click(object sender, EventArgs e)

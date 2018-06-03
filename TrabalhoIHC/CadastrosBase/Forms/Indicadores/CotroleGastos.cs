@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrabalhoIHC.Model;
 using TrabalhoIHC.Service;
 
 namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
@@ -31,107 +32,40 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 
             comboBox1.SelectedIndex = 0;
 
+            ControleGastos cg = ControleGastosService.List().FirstOrDefault();
+
+            textBox1.Text = cg.ValorDiario.ToString();
+            textBox2.Text = cg.ValorMensal.ToString();
+            textBox3.Text = cg.ValorTrimestral.ToString();
+            textBox4.Text = cg.ValorSemestral.ToString();
+            textBox5.Text = cg.ValorAnual.ToString();
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string typed = textBox1.Text;
-            double valueTyped;
 
-            if (double.TryParse(typed, out valueTyped))
-            {
-                textBox2.Text = (valueTyped * 30).ToString("0.00");
-                textBox3.Text = (valueTyped * 90).ToString("0.00");
-                textBox4.Text = (valueTyped * 180).ToString("0.00");
-                textBox5.Text = (valueTyped * 365).ToString("0.00");
-            }
-            else
-            {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Red;
-                MessageBox.Show("Digite um valor válido.");
-            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            string typed = textBox2.Text;
-            double valueTyped;
 
-            if (double.TryParse(typed, out valueTyped))
-            {
-                textBox1.Text = (valueTyped / 30).ToString("0.00");
-                textBox3.Text = (valueTyped * 3).ToString("0.00");
-                textBox4.Text = (valueTyped * 6).ToString("0.00");
-                textBox5.Text = (valueTyped * 12).ToString("0.00");
-            }
-            else
-            {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Red;
-                MessageBox.Show("Digite um valor válido.");
-            }
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            string typed = textBox3.Text;
-            double valueTyped;
 
-            if (double.TryParse(typed, out valueTyped))
-            {
-                textBox1.Text = (valueTyped / 90).ToString("0.00");
-                textBox2.Text = (valueTyped / 3).ToString("0.00");
-                textBox4.Text = (valueTyped * 2).ToString("0.00");
-                textBox5.Text = (valueTyped * 4).ToString("0.00");
-            }
-            else
-            {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Red;
-                MessageBox.Show("Digite um valor válido.");
-            }
 
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            string typed = textBox4.Text;
-            double valueTyped;
-
-            if (double.TryParse(typed, out valueTyped))
-            {
-                textBox1.Text = (valueTyped / 180).ToString("0.00");
-                textBox2.Text = (valueTyped / 6).ToString("0.00");
-                textBox3.Text = (valueTyped / 2).ToString("0.00");
-                textBox5.Text = (valueTyped * 2).ToString("0.00");
-            }
-            else
-            {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Red;
-                MessageBox.Show("Digite um valor válido.");
-            }
+ 
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            string typed = textBox4.Text;
-            double valueTyped;
-
-            if (double.TryParse(typed, out valueTyped))
-            {
-                textBox1.Text = (valueTyped / 180).ToString("0.00");
-                textBox2.Text = (valueTyped / 6).ToString("0.00");
-                textBox3.Text = (valueTyped / 4).ToString("0.00");
-                textBox4.Text = (valueTyped / 2).ToString("0.00");
-            }
-            else
-            {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Red;
-                MessageBox.Show("Digite um valor válido.");
-            }
+    
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -183,6 +117,77 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
             {
                 MessageBox.Show("Finança gravada com sucesso.");
                 form.Form1_Load(null, EventArgs.Empty);
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            string typed = textBox1.Text;
+            double valueTyped;
+
+            if (double.TryParse(typed, out valueTyped))
+            {
+                textBox2.Text = (valueTyped * 30).ToString("0.00");
+                textBox3.Text = (valueTyped * 90).ToString("0.00");
+                textBox4.Text = (valueTyped * 180).ToString("0.00");
+                textBox5.Text = (valueTyped * 365).ToString("0.00");
+            }
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            string typed = textBox2.Text;
+            double valueTyped;
+
+            if (double.TryParse(typed, out valueTyped))
+            {
+                textBox1.Text = (valueTyped / 30).ToString("0.00");
+                textBox3.Text = (valueTyped * 3).ToString("0.00");
+                textBox4.Text = (valueTyped * 6).ToString("0.00");
+                textBox5.Text = (valueTyped * 12).ToString("0.00");
+            }
+            
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            string typed = textBox3.Text;
+            double valueTyped;
+
+            if (double.TryParse(typed, out valueTyped))
+            {
+                textBox1.Text = (valueTyped / 90).ToString("0.00");
+                textBox2.Text = (valueTyped / 3).ToString("0.00");
+                textBox4.Text = (valueTyped * 2).ToString("0.00");
+                textBox5.Text = (valueTyped * 4).ToString("0.00");
+            }
+        }
+
+        private void textBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+            string typed = textBox4.Text;
+            double valueTyped;
+
+            if (double.TryParse(typed, out valueTyped))
+            {
+                textBox1.Text = (valueTyped / 180).ToString("0.00");
+                textBox2.Text = (valueTyped / 6).ToString("0.00");
+                textBox3.Text = (valueTyped / 2).ToString("0.00");
+                textBox5.Text = (valueTyped * 2).ToString("0.00");
+            }
+        }
+
+        private void textBox5_KeyDown(object sender, KeyEventArgs e)
+        {
+            string typed = textBox4.Text;
+            double valueTyped;
+
+            if (double.TryParse(typed, out valueTyped))
+            {
+                textBox1.Text = (valueTyped / 180).ToString("0.00");
+                textBox2.Text = (valueTyped / 6).ToString("0.00");
+                textBox3.Text = (valueTyped / 4).ToString("0.00");
+                textBox4.Text = (valueTyped / 2).ToString("0.00");
             }
         }
     }
