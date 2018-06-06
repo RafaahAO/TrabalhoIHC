@@ -160,6 +160,12 @@
     <Compile Include="CadastrosBase\Forms\Indicadores\CotroleGastos.Designer.cs">
       <DependentUpon>CotroleGastos.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrosBase\Forms\Indicadores\VisaoGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Indicadores\VisaoGeral.Designer.cs">
+      <DependentUpon>VisaoGeral.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrosBase\Model\ControleGastos.cs" />
     <Compile Include="CadastrosBase\Model\CategoriaReceita.cs" />
     <Compile Include="CadastrosBase\Model\CategoriaDespesa.cs" />
@@ -172,6 +178,7 @@
     <Compile Include="CadastrosBase\Service\FiltroService.cs" />
     <Compile Include="CadastrosBase\Service\FinancaService.cs" />
     <Compile Include="CadastrosBase\Service\ContaService.cs" />
+    <Compile Include="CadastrosBase\Service\IndicadoresService.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +250,9 @@
     <EmbeddedResource Include="CadastrosBase\Forms\Indicadores\CotroleGastos.resx">
       <DependentUpon>CotroleGastos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Indicadores\VisaoGeral.resx">
+      <DependentUpon>VisaoGeral.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,7 +280,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
