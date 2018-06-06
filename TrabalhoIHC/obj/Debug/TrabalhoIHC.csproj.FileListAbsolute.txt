@@ -86,3 +86,4 @@ C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoTestes\TrabalhoIHC\
 C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.CreateConta.resources
 C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.Properties.Resources.resources
 C:\Users\Rafah\Documents\Visual Studio 2015\Projects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.csproj.GenerateResource.Cache
+C:\Users\rafael.aoliveira\Documents\PersonalProjects\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.csprojResolveAssemblyReference.cache

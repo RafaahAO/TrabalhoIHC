@@ -64,8 +64,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anoMesReferenciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Finalizado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Receita = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.financaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btn_F10 = new System.Windows.Forms.Button();
             this.btn_F8 = new System.Windows.Forms.Button();
             this.btn_F6 = new System.Windows.Forms.Button();
@@ -75,12 +81,6 @@
             this.btn_F7 = new System.Windows.Forms.Button();
             this.btn_F5 = new System.Windows.Forms.Button();
             this.btn_F3 = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anoMesReferenciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.financaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.financaBindingSource)).BeginInit();
@@ -412,6 +412,45 @@
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             this.dataGridView1.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridView1_RowPrePaint);
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 30;
+            // 
+            // descricaoDataGridViewTextBoxColumn
+            // 
+            this.descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
+            this.descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
+            this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
+            this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.descricaoDataGridViewTextBoxColumn.Width = 148;
+            // 
+            // anoMesReferenciaDataGridViewTextBoxColumn
+            // 
+            this.anoMesReferenciaDataGridViewTextBoxColumn.DataPropertyName = "AnoMesReferencia";
+            this.anoMesReferenciaDataGridViewTextBoxColumn.HeaderText = "AnoMesReferencia";
+            this.anoMesReferenciaDataGridViewTextBoxColumn.Name = "anoMesReferenciaDataGridViewTextBoxColumn";
+            this.anoMesReferenciaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vencimentoDataGridViewTextBoxColumn
+            // 
+            this.vencimentoDataGridViewTextBoxColumn.DataPropertyName = "Vencimento";
+            this.vencimentoDataGridViewTextBoxColumn.HeaderText = "Vencimento";
+            this.vencimentoDataGridViewTextBoxColumn.Name = "vencimentoDataGridViewTextBoxColumn";
+            this.vencimentoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.vencimentoDataGridViewTextBoxColumn.Width = 65;
+            // 
+            // valorDataGridViewTextBoxColumn
+            // 
+            this.valorDataGridViewTextBoxColumn.DataPropertyName = "Valor";
+            this.valorDataGridViewTextBoxColumn.HeaderText = "Valor";
+            this.valorDataGridViewTextBoxColumn.Name = "valorDataGridViewTextBoxColumn";
+            this.valorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.valorDataGridViewTextBoxColumn.Width = 75;
+            // 
             // Finalizado
             // 
             this.Finalizado.DataPropertyName = "Pago";
@@ -427,6 +466,10 @@
             this.Receita.Name = "Receita";
             this.Receita.ReadOnly = true;
             this.Receita.Visible = false;
+            // 
+            // financaBindingSource
+            // 
+            this.financaBindingSource.DataSource = typeof(TrabalhoIHC.Model.Financa);
             // 
             // btn_F10
             // 
@@ -536,49 +579,6 @@
             this.btn_F3.UseVisualStyleBackColor = true;
             this.btn_F3.Click += new System.EventHandler(this.btn_F3_Click);
             this.btn_F3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn_F3_KeyDown);
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 30;
-            // 
-            // descricaoDataGridViewTextBoxColumn
-            // 
-            this.descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
-            this.descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
-            this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
-            this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.descricaoDataGridViewTextBoxColumn.Width = 148;
-            // 
-            // anoMesReferenciaDataGridViewTextBoxColumn
-            // 
-            this.anoMesReferenciaDataGridViewTextBoxColumn.DataPropertyName = "AnoMesReferencia";
-            this.anoMesReferenciaDataGridViewTextBoxColumn.HeaderText = "AnoMesReferencia";
-            this.anoMesReferenciaDataGridViewTextBoxColumn.Name = "anoMesReferenciaDataGridViewTextBoxColumn";
-            this.anoMesReferenciaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vencimentoDataGridViewTextBoxColumn
-            // 
-            this.vencimentoDataGridViewTextBoxColumn.DataPropertyName = "Vencimento";
-            this.vencimentoDataGridViewTextBoxColumn.HeaderText = "Vencimento";
-            this.vencimentoDataGridViewTextBoxColumn.Name = "vencimentoDataGridViewTextBoxColumn";
-            this.vencimentoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.vencimentoDataGridViewTextBoxColumn.Width = 65;
-            // 
-            // valorDataGridViewTextBoxColumn
-            // 
-            this.valorDataGridViewTextBoxColumn.DataPropertyName = "Valor";
-            this.valorDataGridViewTextBoxColumn.HeaderText = "Valor";
-            this.valorDataGridViewTextBoxColumn.Name = "valorDataGridViewTextBoxColumn";
-            this.valorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.valorDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // financaBindingSource
-            // 
-            this.financaBindingSource.DataSource = typeof(TrabalhoIHC.Model.Financa);
             // 
             // Form1
             // 

@@ -15,7 +15,7 @@ namespace TrabalhoIHC.Service
             string linha = "";
             int lastId = 0;
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = "ControleGastoss.txt";
+            string FileName = "ControleGastos.txt";
             string path = basePath + FileName;
             string[] obj;
 
@@ -57,11 +57,11 @@ namespace TrabalhoIHC.Service
             List<string> Erros = new List<string>();
 
             ControleGastos ControleGastos = new ControleGastos();
-            ControleGastos.ValorDiario = ConvertDouble(ValorDiario);
-            ControleGastos.ValorMensal = ConvertDouble(ValorMensal);
-            ControleGastos.ValorTrimestral = ConvertDouble(ValorTrimestral);
-            ControleGastos.ValorSemestral = ConvertDouble(ValorSemestral);
-            ControleGastos.ValorAnual = ConvertDouble(ValorAnual);
+            ControleGastos.ValorDiario = ConvertDouble(ValorDiario.Replace('.', ','));
+            ControleGastos.ValorMensal = ConvertDouble(ValorMensal.Replace('.', ','));
+            ControleGastos.ValorTrimestral = ConvertDouble(ValorTrimestral.Replace('.', ','));
+            ControleGastos.ValorSemestral = ConvertDouble(ValorSemestral.Replace('.', ','));
+            ControleGastos.ValorAnual = ConvertDouble(ValorAnual.Replace('.', ','));
 
             GravarDados(Method.Create, ref Erros, ControleGastos);
 
@@ -70,15 +70,24 @@ namespace TrabalhoIHC.Service
         public static List<string> Edit(string ValorDiario, string ValorMensal, string ValorTrimestral, string ValorSemestral, string ValorAnual)
         {
             List<string> Erros = new List<string>();
-
             ControleGastos ControleGastos = new ControleGastos();
-            ControleGastos.ValorDiario = ConvertDouble(ValorDiario);
-            ControleGastos.ValorMensal = ConvertDouble(ValorMensal);
-            ControleGastos.ValorTrimestral = ConvertDouble(ValorTrimestral);
-            ControleGastos.ValorSemestral = ConvertDouble(ValorSemestral);
-            ControleGastos.ValorAnual = ConvertDouble(ValorAnual);
 
-            GravarDados(Method.Edit, ref Erros, ControleGastos);
+            try
+            {
+                ControleGastos.Id = 1;
+                ControleGastos.ValorDiario = ConvertDouble(ValorDiario);
+                ControleGastos.ValorMensal = ConvertDouble(ValorMensal);
+                ControleGastos.ValorTrimestral = ConvertDouble(ValorTrimestral);
+                ControleGastos.ValorSemestral = ConvertDouble(ValorSemestral);
+                ControleGastos.ValorAnual = ConvertDouble(ValorAnual);
+
+                GravarDados(Method.Edit, ref Erros, ControleGastos);
+
+            }
+            catch
+            {
+                Erros.Add("O valor digitado deve ser somente numérico.");
+            }
 
             return Erros;
         }
@@ -107,7 +116,7 @@ namespace TrabalhoIHC.Service
             string linha = "";
             int lastId = 0;
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = "ControleGastoss.txt";
+            string FileName = "ControleGastos.txt";
             string path = basePath + FileName;
             string tempBasePath = basePath + "TempContext";
             string tempPath = basePath + "TempContext\\" + FileName;
@@ -140,7 +149,7 @@ namespace TrabalhoIHC.Service
                     {
                         using (StreamWriter sw = File.CreateText(path))
                         {
-                            sw.WriteLine(lastId.ToString() + "|" + ControleGastos.ValorDiario.ToString("0.00") + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
+                            sw.WriteLine(1 + "|" + ControleGastos.ValorDiario.ToString("0.00") + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
                         }
                     }
 
@@ -192,7 +201,7 @@ namespace TrabalhoIHC.Service
                         {
                             foreach (var item in matSave.Values)
                             {
-                                sw.WriteLine(lastId.ToString() + "|" + ControleGastos.ValorDiario.ToString("0.00") + "|" + ControleGastos.ValorMensal.ToString("0.00") + "|" + ControleGastos.ValorTrimestral.ToString("0.00") + "|" + ControleGastos.ValorSemestral.ToString("0.00") + "|" + ControleGastos.ValorAnual.ToString("0.00"));
+                                sw.WriteLine(item[0] + "|" + item[1] + "|" + item[2] + "|" + item[3] + "|" + item[4] + "|" + item[5]);
                             }
 
                         }
@@ -294,7 +303,7 @@ namespace TrabalhoIHC.Service
         }
 
         private static double ConvertDouble(string Value) =>
-            (object)Value is double ? double.Parse(Value) : 0.0;
+            Convert.ToDouble(Value);
 
     }
 }

@@ -102,7 +102,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 
         private void button4_Click(object sender, EventArgs e)
         {
-            List<string> Erros = ControleGastosService.Create(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
+            List<string> Erros = ControleGastosService.Edit(textBox1.Text.Replace('.', ','), textBox2.Text.Replace('.', ','), textBox3.Text.Replace('.', ','), textBox4.Text.Replace('.', ','), textBox5.Text.Replace('.', ','));
 
             if (Erros.Count > 0)
             {
@@ -115,14 +115,14 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
             }
             else
             {
-                MessageBox.Show("Finança gravada com sucesso.");
+                MessageBox.Show("Controle alterado com sucesso.");
                 form.Form1_Load(null, EventArgs.Empty);
             }
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            string typed = textBox1.Text;
+            string typed = textBox1.Text.Replace('.',',');
             double valueTyped;
 
             if (double.TryParse(typed, out valueTyped))
@@ -136,7 +136,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 
         private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
-            string typed = textBox2.Text;
+            string typed = textBox2.Text.Replace('.', ',');
             double valueTyped;
 
             if (double.TryParse(typed, out valueTyped))
@@ -151,7 +151,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 
         private void textBox3_KeyDown(object sender, KeyEventArgs e)
         {
-            string typed = textBox3.Text;
+            string typed = textBox3.Text.Replace('.', ',');
             double valueTyped;
 
             if (double.TryParse(typed, out valueTyped))
@@ -165,7 +165,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 
         private void textBox4_KeyDown(object sender, KeyEventArgs e)
         {
-            string typed = textBox4.Text;
+            string typed = textBox4.Text.Replace('.', ',');
             double valueTyped;
 
             if (double.TryParse(typed, out valueTyped))
@@ -179,7 +179,7 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Indicadores
 
         private void textBox5_KeyDown(object sender, KeyEventArgs e)
         {
-            string typed = textBox4.Text;
+            string typed = textBox4.Text.Replace('.', ',');
             double valueTyped;
 
             if (double.TryParse(typed, out valueTyped))

@@ -183,7 +183,8 @@ namespace TrabalhoIHC
             binding.DataSource = FinancaService.List();
             dataGridView1.DataSource = binding;
 
-            ControleGastosService.setFistConta();
+            if (ControleGastosService.List().Count == 0)
+                ControleGastosService.setFistConta();
 
         }
 
@@ -375,7 +376,7 @@ namespace TrabalhoIHC
             Filtro filtro = FiltroService.findfiltro("F2");
             if (filtro != null)
             {
-                var financas =  FiltroService.Filtrar(filtro.Id, filtro.ftrCatDespesa, filtro.ftrCatReceita, filtro.ftrConta, filtro.ftrDescricao, filtro.ftrPago, filtro.ftrReferencias, filtro.ftrReferencias, filtro.ftrVencimento);
+                var financas = FiltroService.Filtrar(filtro.Id, filtro.ftrCatDespesa, filtro.ftrCatReceita, filtro.ftrConta, filtro.ftrDescricao, filtro.ftrPago, filtro.ftrReferencias, filtro.ftrReferencias, filtro.ftrVencimento);
                 this.filterGrid(financas);
 
             }
