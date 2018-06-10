@@ -1,2 +1,0 @@
-1|Salário
-2|Teste

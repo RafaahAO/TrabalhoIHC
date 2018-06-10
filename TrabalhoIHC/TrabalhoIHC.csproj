@@ -136,6 +136,12 @@
     <Compile Include="CadastrosBase\Forms\Financa\AdviceFinanca.Designer.cs">
       <DependentUpon>AdviceFinanca.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\AjudaDataMovimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrosBase\Forms\Financa\AjudaDataMovimento.Designer.cs">
+      <DependentUpon>AjudaDataMovimento.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrosBase\Forms\Financa\CreateFinanca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrosBase\Forms\Financa\AdviceFinanca.resx">
       <DependentUpon>AdviceFinanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosBase\Forms\Financa\AjudaDataMovimento.resx">
+      <DependentUpon>AjudaDataMovimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrosBase\Forms\Financa\CreateFinanca.resx">
       <DependentUpon>CreateFinanca.cs</DependentUpon>

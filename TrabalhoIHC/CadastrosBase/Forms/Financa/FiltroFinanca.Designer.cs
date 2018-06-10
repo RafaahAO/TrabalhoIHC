@@ -30,6 +30,19 @@
         {
             this.MainLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ftrCatReceita = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ftrCatDespesa = new System.Windows.Forms.CheckBox();
+            this.ftrConta = new System.Windows.Forms.CheckBox();
+            this.ftrTipo = new System.Windows.Forms.CheckBox();
+            this.ftrVencimento = new System.Windows.Forms.CheckBox();
+            this.ftrReferências = new System.Windows.Forms.CheckBox();
+            this.ftrDescricao = new System.Windows.Forms.CheckBox();
+            this.ftrPago = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -40,8 +53,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,20 +66,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.ftrPago = new System.Windows.Forms.CheckBox();
-            this.ftrDescricao = new System.Windows.Forms.CheckBox();
-            this.ftrReferências = new System.Windows.Forms.CheckBox();
-            this.ftrVencimento = new System.Windows.Forms.CheckBox();
-            this.ftrCatReceita = new System.Windows.Forms.CheckBox();
-            this.ftrCatDespesa = new System.Windows.Forms.CheckBox();
-            this.ftrConta = new System.Windows.Forms.CheckBox();
-            this.ftrTipo = new System.Windows.Forms.CheckBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainLabel
@@ -112,6 +112,153 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(562, 371);
             this.panel1.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Location = new System.Drawing.Point(6, 9);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(237, 121);
+            this.panel3.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(38, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(153, 15);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Adicionar Pre-Definido *";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8",
+            "F9",
+            "F10"});
+            this.comboBox1.Location = new System.Drawing.Point(82, 29);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(51, 21);
+            this.comboBox1.TabIndex = 20;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.ftrCatReceita);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.ftrCatDespesa);
+            this.panel2.Controls.Add(this.ftrConta);
+            this.panel2.Controls.Add(this.ftrTipo);
+            this.panel2.Controls.Add(this.ftrVencimento);
+            this.panel2.Controls.Add(this.ftrReferências);
+            this.panel2.Controls.Add(this.ftrDescricao);
+            this.panel2.Controls.Add(this.ftrPago);
+            this.panel2.Location = new System.Drawing.Point(266, 9);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(289, 121);
+            this.panel2.TabIndex = 31;
+            // 
+            // ftrCatReceita
+            // 
+            this.ftrCatReceita.AutoSize = true;
+            this.ftrCatReceita.Location = new System.Drawing.Point(155, 96);
+            this.ftrCatReceita.Name = "ftrCatReceita";
+            this.ftrCatReceita.Size = new System.Drawing.Size(108, 17);
+            this.ftrCatReceita.TabIndex = 7;
+            this.ftrCatReceita.Text = "CategoriaReceita";
+            this.ftrCatReceita.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(3, 4);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(233, 15);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "Selecione os filtros a serem aplicados.";
+            // 
+            // ftrCatDespesa
+            // 
+            this.ftrCatDespesa.AutoSize = true;
+            this.ftrCatDespesa.Location = new System.Drawing.Point(156, 73);
+            this.ftrCatDespesa.Name = "ftrCatDespesa";
+            this.ftrCatDespesa.Size = new System.Drawing.Size(116, 17);
+            this.ftrCatDespesa.TabIndex = 6;
+            this.ftrCatDespesa.Text = "Categoria Despesa";
+            this.ftrCatDespesa.UseVisualStyleBackColor = true;
+            // 
+            // ftrConta
+            // 
+            this.ftrConta.AutoSize = true;
+            this.ftrConta.Location = new System.Drawing.Point(156, 50);
+            this.ftrConta.Name = "ftrConta";
+            this.ftrConta.Size = new System.Drawing.Size(54, 17);
+            this.ftrConta.TabIndex = 5;
+            this.ftrConta.Text = "Conta";
+            this.ftrConta.UseVisualStyleBackColor = true;
+            // 
+            // ftrTipo
+            // 
+            this.ftrTipo.AutoSize = true;
+            this.ftrTipo.Location = new System.Drawing.Point(156, 27);
+            this.ftrTipo.Name = "ftrTipo";
+            this.ftrTipo.Size = new System.Drawing.Size(47, 17);
+            this.ftrTipo.TabIndex = 4;
+            this.ftrTipo.Text = "Tipo";
+            this.ftrTipo.UseVisualStyleBackColor = true;
+            // 
+            // ftrVencimento
+            // 
+            this.ftrVencimento.AutoSize = true;
+            this.ftrVencimento.Location = new System.Drawing.Point(5, 96);
+            this.ftrVencimento.Name = "ftrVencimento";
+            this.ftrVencimento.Size = new System.Drawing.Size(104, 17);
+            this.ftrVencimento.TabIndex = 3;
+            this.ftrVencimento.Text = "Data Movimento";
+            this.ftrVencimento.UseVisualStyleBackColor = true;
+            // 
+            // ftrReferências
+            // 
+            this.ftrReferências.AutoSize = true;
+            this.ftrReferências.Location = new System.Drawing.Point(6, 73);
+            this.ftrReferências.Name = "ftrReferências";
+            this.ftrReferências.Size = new System.Drawing.Size(83, 17);
+            this.ftrReferências.TabIndex = 2;
+            this.ftrReferências.Text = "Referências";
+            this.ftrReferências.UseVisualStyleBackColor = true;
+            // 
+            // ftrDescricao
+            // 
+            this.ftrDescricao.AutoSize = true;
+            this.ftrDescricao.Location = new System.Drawing.Point(6, 50);
+            this.ftrDescricao.Name = "ftrDescricao";
+            this.ftrDescricao.Size = new System.Drawing.Size(74, 17);
+            this.ftrDescricao.TabIndex = 1;
+            this.ftrDescricao.Text = "Descrição";
+            this.ftrDescricao.UseVisualStyleBackColor = true;
+            // 
+            // ftrPago
+            // 
+            this.ftrPago.AutoSize = true;
+            this.ftrPago.Location = new System.Drawing.Point(6, 27);
+            this.ftrPago.Name = "ftrPago";
+            this.ftrPago.Size = new System.Drawing.Size(51, 17);
+            this.ftrPago.TabIndex = 0;
+            this.ftrPago.Text = "Pago";
+            this.ftrPago.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -207,35 +354,6 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "Conta";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "F1",
-            "F2",
-            "F3",
-            "F4",
-            "F5",
-            "F6",
-            "F7",
-            "F8",
-            "F9",
-            "F10"});
-            this.comboBox1.Location = new System.Drawing.Point(82, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(51, 21);
-            this.comboBox1.TabIndex = 20;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(38, 6);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 15);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Adicionar Pre-Definido *";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -305,11 +423,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(85, 276);
+            this.label3.Location = new System.Drawing.Point(70, 274);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 15);
+            this.label3.Size = new System.Drawing.Size(106, 15);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Vencimento";
+            this.label3.Text = "Data Movimento";
             // 
             // label2
             // 
@@ -355,124 +473,6 @@
             this.label8.TabIndex = 20;
             this.label8.Text = "* Opcional - Sobrepõe o filtro anterior";
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.ftrCatReceita);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.ftrCatDespesa);
-            this.panel2.Controls.Add(this.ftrConta);
-            this.panel2.Controls.Add(this.ftrTipo);
-            this.panel2.Controls.Add(this.ftrVencimento);
-            this.panel2.Controls.Add(this.ftrReferências);
-            this.panel2.Controls.Add(this.ftrDescricao);
-            this.panel2.Controls.Add(this.ftrPago);
-            this.panel2.Location = new System.Drawing.Point(266, 9);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(289, 121);
-            this.panel2.TabIndex = 31;
-            // 
-            // ftrPago
-            // 
-            this.ftrPago.AutoSize = true;
-            this.ftrPago.Location = new System.Drawing.Point(6, 27);
-            this.ftrPago.Name = "ftrPago";
-            this.ftrPago.Size = new System.Drawing.Size(51, 17);
-            this.ftrPago.TabIndex = 0;
-            this.ftrPago.Text = "Pago";
-            this.ftrPago.UseVisualStyleBackColor = true;
-            // 
-            // ftrDescricao
-            // 
-            this.ftrDescricao.AutoSize = true;
-            this.ftrDescricao.Location = new System.Drawing.Point(6, 50);
-            this.ftrDescricao.Name = "ftrDescricao";
-            this.ftrDescricao.Size = new System.Drawing.Size(74, 17);
-            this.ftrDescricao.TabIndex = 1;
-            this.ftrDescricao.Text = "Descrição";
-            this.ftrDescricao.UseVisualStyleBackColor = true;
-            // 
-            // ftrReferências
-            // 
-            this.ftrReferências.AutoSize = true;
-            this.ftrReferências.Location = new System.Drawing.Point(6, 73);
-            this.ftrReferências.Name = "ftrReferências";
-            this.ftrReferências.Size = new System.Drawing.Size(83, 17);
-            this.ftrReferências.TabIndex = 2;
-            this.ftrReferências.Text = "Referências";
-            this.ftrReferências.UseVisualStyleBackColor = true;
-            // 
-            // ftrVencimento
-            // 
-            this.ftrVencimento.AutoSize = true;
-            this.ftrVencimento.Location = new System.Drawing.Point(5, 96);
-            this.ftrVencimento.Name = "ftrVencimento";
-            this.ftrVencimento.Size = new System.Drawing.Size(82, 17);
-            this.ftrVencimento.TabIndex = 3;
-            this.ftrVencimento.Text = "Vencimento";
-            this.ftrVencimento.UseVisualStyleBackColor = true;
-            // 
-            // ftrCatReceita
-            // 
-            this.ftrCatReceita.AutoSize = true;
-            this.ftrCatReceita.Location = new System.Drawing.Point(155, 96);
-            this.ftrCatReceita.Name = "ftrCatReceita";
-            this.ftrCatReceita.Size = new System.Drawing.Size(108, 17);
-            this.ftrCatReceita.TabIndex = 7;
-            this.ftrCatReceita.Text = "CategoriaReceita";
-            this.ftrCatReceita.UseVisualStyleBackColor = true;
-            // 
-            // ftrCatDespesa
-            // 
-            this.ftrCatDespesa.AutoSize = true;
-            this.ftrCatDespesa.Location = new System.Drawing.Point(156, 73);
-            this.ftrCatDespesa.Name = "ftrCatDespesa";
-            this.ftrCatDespesa.Size = new System.Drawing.Size(116, 17);
-            this.ftrCatDespesa.TabIndex = 6;
-            this.ftrCatDespesa.Text = "Categoria Despesa";
-            this.ftrCatDespesa.UseVisualStyleBackColor = true;
-            // 
-            // ftrConta
-            // 
-            this.ftrConta.AutoSize = true;
-            this.ftrConta.Location = new System.Drawing.Point(156, 50);
-            this.ftrConta.Name = "ftrConta";
-            this.ftrConta.Size = new System.Drawing.Size(54, 17);
-            this.ftrConta.TabIndex = 5;
-            this.ftrConta.Text = "Conta";
-            this.ftrConta.UseVisualStyleBackColor = true;
-            // 
-            // ftrTipo
-            // 
-            this.ftrTipo.AutoSize = true;
-            this.ftrTipo.Location = new System.Drawing.Point(156, 27);
-            this.ftrTipo.Name = "ftrTipo";
-            this.ftrTipo.Size = new System.Drawing.Size(47, 17);
-            this.ftrTipo.TabIndex = 4;
-            this.ftrTipo.Text = "Tipo";
-            this.ftrTipo.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(3, 4);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(233, 15);
-            this.label13.TabIndex = 32;
-            this.label13.Text = "Selecione os filtros a serem aplicados.";
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Location = new System.Drawing.Point(6, 9);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(237, 121);
-            this.panel3.TabIndex = 0;
-            // 
             // FiltroFinanca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,10 +487,10 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FiltroFinanca_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

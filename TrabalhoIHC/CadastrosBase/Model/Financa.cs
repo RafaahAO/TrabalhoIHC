@@ -20,7 +20,6 @@ namespace TrabalhoIHC.Model
         //AnoMesReferencia e Vencimento
         public string AnoMesReferencia { get; set; }
         public DateTime Vencimento { get; set; }
-        public DateTime DataMovimento { get; set; }
 
         //Valor Despesa/Receita
         public double Valor { get; set; }

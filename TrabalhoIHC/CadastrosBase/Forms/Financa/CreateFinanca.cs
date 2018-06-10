@@ -165,5 +165,26 @@ namespace TrabalhoIHC.CadastrosBase.Forms.Financa
                 button1.PerformClick();
             }
         }
+
+        private void panelReceita_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboCatReceita_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_MouseClick(object sender, MouseEventArgs e)
+        {
+            AjudaDataMovimento adm = new AjudaDataMovimento();
+            adm.Show();
+        }
     }
 }

@@ -117,3 +117,4 @@ C:\Projetos\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.Form1.resources
 C:\Projetos\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.CreateConta.resources
 C:\Projetos\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.Properties.Resources.resources
 C:\Projetos\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.csproj.GenerateResource.Cache
+C:\Projetos\TrabalhoTestes\TrabalhoIHC\obj\Debug\TrabalhoIHC.CadastrosBase.Forms.Financa.AjudaDataMovimento.resources

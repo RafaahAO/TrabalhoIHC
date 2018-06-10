@@ -15,12 +15,12 @@ namespace TrabalhoIHC.CadastrosBase.Service
         {
             ControleGastos metas = ControleGastosService.List().FirstOrDefault();
 
-            List<Financa> financasDia = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) == DateTime.Parse(m.DataMovimento.ToString("dd/MM/yyyy"))).ToList();
-            List<Financa> financasSemana = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) < m.DataMovimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(7).ToString("dd/MM/yyyy")) > m.DataMovimento).ToList();
-            List<Financa> financasMes = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) < m.DataMovimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(30).ToString("dd/MM/yyyy")) > m.DataMovimento).ToList();
-            List<Financa> financasTrimestre = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) < m.DataMovimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(90).ToString("dd/MM/yyyy")) > m.DataMovimento).ToList();
-            List<Financa> financasSemestre = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) < m.DataMovimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(180).ToString("dd/MM/yyyy")) > m.DataMovimento).ToList();
-            List<Financa> financasAno = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) < m.DataMovimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(360).ToString("dd/MM/yyyy")) > m.DataMovimento).ToList();
+            List<Financa> financasDia = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) == DateTime.Parse(m.Vencimento.ToString("dd/MM/yyyy"))).ToList();
+            List<Financa> financasSemana = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) <= m.Vencimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(7).ToString("dd/MM/yyyy")) >= m.Vencimento).ToList();
+            List<Financa> financasMes = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) <= m.Vencimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(30).ToString("dd/MM/yyyy")) >= m.Vencimento).ToList();
+            List<Financa> financasTrimestre = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) <= m.Vencimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(90).ToString("dd/MM/yyyy")) >= m.Vencimento).ToList();
+            List<Financa> financasSemestre = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) <= m.Vencimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(180).ToString("dd/MM/yyyy")) >= m.Vencimento).ToList();
+            List<Financa> financasAno = FinancaService.List().Where(m => DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy")) <= m.Vencimento).Where(m => DateTime.Parse(DateTime.Now.AddDays(360).ToString("dd/MM/yyyy")) >= m.Vencimento).ToList();
 
             Dictionary<string, dynamic> result = new Dictionary<string, dynamic>();
 
