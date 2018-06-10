@@ -222,6 +222,7 @@
             // 
             this.menuItem3.Index = 1;
             this.menuItem3.Text = "Visão Global";
+            this.menuItem3.Click += new System.EventHandler(this.menuItem3_Click);
             // 
             // menuItem13
             // 

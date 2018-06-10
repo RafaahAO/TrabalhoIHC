@@ -533,5 +533,11 @@ namespace TrabalhoIHC
             CotroleGastos cg = new CotroleGastos(this);
             cg.Show();
         }
+
+        private void menuItem3_Click(object sender, EventArgs e)
+        {
+            VisaoGeral vg = new VisaoGeral();
+            vg.Show();
+        }
     }
 }

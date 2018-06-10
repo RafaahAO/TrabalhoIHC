@@ -25,33 +25,33 @@ namespace TrabalhoIHC.CadastrosBase.Service
             Dictionary<string, dynamic> result = new Dictionary<string, dynamic>();
 
             dynamic obj = new ExpandoObject();
-            obj.Meta = metas.ValorDiario.ToString("0.00");
+            obj.Meta = metas.ValorDiario;
             obj.Realizado = financasDia.Sum(m => m.Valor);
-            obj.Resultado = obj.Meta <= obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
+            obj.Resultado = obj.Meta > obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
             result.Add("Dia", obj);
 
             obj = new ExpandoObject();
-            obj.Meta = metas.ValorMensal.ToString("0.00");
+            obj.Meta = metas.ValorMensal;
             obj.Realizado = financasMes.Sum(m => m.Valor);
-            obj.Resultado = obj.Meta <= obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
+            obj.Resultado = obj.Meta > obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
             result.Add("Mes", obj);
 
             obj = new ExpandoObject();
-            obj.Meta = metas.ValorTrimestral.ToString("0.00");
+            obj.Meta = metas.ValorTrimestral;
             obj.Realizado = financasTrimestre.Sum(m => m.Valor);
-            obj.Resultado = obj.Meta <= obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
+            obj.Resultado = obj.Meta > obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
             result.Add("Trimestre", obj);
 
             obj = new ExpandoObject();
-            obj.Meta = metas.ValorSemestral.ToString("0.00");
+            obj.Meta = metas.ValorSemestral;
             obj.Realizado = financasSemestre.Sum(m => m.Valor);
-            obj.Resultado = obj.Meta <= obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
+            obj.Resultado = obj.Meta > obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
             result.Add("Semestre", obj);
 
             obj = new ExpandoObject();
-            obj.Meta = metas.ValorAnual.ToString("0.00");
+            obj.Meta = metas.ValorAnual;
             obj.Realizado = financasAno.Sum(m => m.Valor);
-            obj.Resultado = obj.Meta <= obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
+            obj.Resultado = obj.Meta > obj.Realizado ? "Dentro da Meta" : "Superior à Meta";
             result.Add("Ano", obj);
 
             return result;
